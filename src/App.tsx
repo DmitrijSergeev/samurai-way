@@ -9,7 +9,7 @@ const App = () => {
     <div className = "app-wrapper">
         <Header />
         <Navbar />
-        <Profile />
+        <Profile title={'Make love not war'}/>
 
     </div>
   );

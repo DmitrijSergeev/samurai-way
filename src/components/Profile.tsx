@@ -1,14 +1,18 @@
 import React from "react";
 import my_way from '../img/my-way.png';
 import classes from './Profile.module.css';
+type ProfileType = {
+    title: string
+}
 
-const Profile = () => {
+
+const Profile = (props:ProfileType) => {
     return (
         <div className={classes.content}>
             <div><img src={my_way} alt={"main pic"}/></div>
-            <div>
-                ava+description
-            </div>
+            <h3>
+                {props.title}
+            </h3>
             <div>
                 My posts
             </div>
